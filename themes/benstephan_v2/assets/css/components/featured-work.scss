@@ -1,0 +1,121 @@
+#featured-work{
+    @media(max-width:$screen-md){
+        margin-bottom:60px;
+    }
+    .section-heading{
+        h4{
+            @media(max-width:$screen-md){
+                text-align:center;
+                width:100%;
+            }
+            
+        }
+    }
+    .container-fluid{
+        @media(min-width:$screen-md){
+            padding-top:120px;
+            padding-bottom:120px;
+        }
+    }
+    .col-md{
+        @media(min-width:$screen-md){
+            padding-left:25px;
+            padding-right:25px;
+        }
+        @media(max-width:$screen-md){
+            margin-bottom:25px;
+            width:100%;
+        }
+        &:nth-child(2){
+            @media(min-width:$screen-md){
+                margin-top:-70px;
+            }
+        }
+        &:nth-child(3){
+            @media(min-width:$screen-md){
+                margin-top:-140px;
+            }
+        }
+    }
+    .featured-work__wrap{
+        @include box-shadow(0,15px,30px,rgba(0,0,0,0.1));
+        overflow:hidden;
+        display:flex;
+        position:relative;
+        width:100%;
+        @media(min-width:$screen-md){
+            height:284px;
+        }
+        @media(max-width:$screen-md){
+            height:188px;
+        }
+        
+        align-items: center;
+        background:#000;
+        @include transition(all .2s);
+
+        a{
+            display:block;
+            width:100%;
+            height:100%;
+            color:#FFF;
+            text-decoration:none;
+            @include transition(all .2s);
+
+            h4{
+                color:#FFF;
+                opacity:0;
+                @include transition(all .2s);
+            }
+
+            .btn{
+                color:#FFF;
+                border:2px solid $main_color;
+                text-decoration:none;
+                font-weight:bold;
+                opacity:0;
+                @include transition(all .2s);
+                &:hover{
+                    background:$main_color;
+                    
+                }
+            }
+        }
+        &:hover{
+            img{
+                opacity:0.2;
+                transform:scale(1.2,1.2);
+            }
+            h4{
+                opacity:1;
+            }
+            .btn{
+                opacity:1;
+            }
+        }
+        img{
+            position:absolute;
+            top:0;
+            left:0;
+            @include transition(all .2s);
+        }
+        .featured-work__description{
+            position:relative;
+            margin:0 auto;
+            opacity:0;
+            transform:translateY(110%);
+            display:none;
+            z-index:99;
+            width:100%;
+            text-align:center;
+            @include transition(all .2s);
+        }
+        &:hover{
+            .featured-work__description{
+                display:inline-table;
+                opacity:1;
+                transform:translateY(95%);
+            }
+        }
+    }
+}

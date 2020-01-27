@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,800|Source+Sans+Pro:400,400i,700,700i&display=swap');
+$main_font: 'Source Sans Pro', sans-serif;
+$secondary_font: 'Montserrat', sans-serif;
+$main_color:#094ABD;
+$secondary_color:#e3c000;
+$third_color:#002970;
+$fourth_color:#704C00;
+$dark:#0D0D0D;
+$light:#FFF;
+$font_color:#666;
+
+$spacer: 60px 0;
+
+
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;

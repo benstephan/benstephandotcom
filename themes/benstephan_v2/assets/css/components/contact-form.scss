@@ -1,0 +1,107 @@
+#contact-pop-up{
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    display:flex;
+    height:0;
+    width:100%;
+    background:$main_color;
+    align-items:center;
+    overflow:hidden;
+    .screen-reader-response{
+        display:none;
+    }
+    .wpcf7-response-output{
+        color:#FFF;
+        border:2px solid #FFF;
+        text-align:center;
+        width:95%;
+        max-width:600px;
+        position:relative;
+        margin:30px auto 0 auto;
+
+        &.wpcf7-display-none{
+            display:none;
+        }
+    }
+    .contact-pop-up__close{
+        background:rgba(0,0,0,0.4);
+        color:#FFF;
+        font-size:30px;
+        position:absolute;
+        top:30px;
+        right:30px;
+        padding:0 7px;
+        @include border-radius(100px);
+
+        &:hover{
+            cursor:pointer;
+        }
+    }
+    .container-fluid{
+        @media(min-width:$screen-md){
+            width:55%;
+        }
+    }
+    .btn{
+        border:2px solid #FFF;
+        font-weight:bold;
+        color:#FFF;
+        margin-top:35px;
+
+        &:hover{
+            background:darken($main_color, 10%);
+            border:2px solid darken($main_color, 10%);
+        }
+    }
+    .col-md-12{
+        align-items:center;
+        text-align:center;
+        input[type="text"], input[type="email"]{
+            background:none;
+            border:none;
+            border-bottom:2px solid #FFF;
+            color:#FFF;
+            max-width:250px;
+        }
+        p{
+            text-align:center;
+            color:#FFF;
+            font-size:24px;
+
+            &:nth-child(2){
+                margin-bottom:35px;
+            }
+        }
+        form{
+            text-align:center;
+        }
+        .wpcf7-list-item{
+            color:#FFF;
+            @media(min-width:$screen-md){
+                font-size:24px;
+                margin:10px;
+            }
+            border:2px solid #FFF;
+            @include border-radius(30px);
+            padding:3px 10px 7px 10px;
+            display:inline-block;
+            margin:3px;
+            align-items: center;
+            align-content: center;
+            input[type="checkbox"]{
+                display:none;
+            }
+            &:hover{
+                cursor:pointer;
+            }
+            &.clicked{
+                background:darken($main_color, 10%);
+                color:#FFF;
+                border:2px solid darken($main_color, 10%);
+            }
+        }
+    }
+}

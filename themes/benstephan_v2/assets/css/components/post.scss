@@ -1,0 +1,34 @@
+#work-posts{
+    padding-bottom:60px;
+}
+.work-posts__post{
+    margin-bottom:120px;
+    .work-posts__image{
+        margin-bottom:30px;
+        @include box-shadow(0,15px,30px,rgba(0,0,0,0.1));
+        max-height:447px;
+    }
+    .work-posts__content{
+        h3{
+            a{
+                font-size:36px;
+                color:$main_color;
+                text-decoration:none;
+            }
+        }
+        p{
+            margin-bottom:45px;
+        }
+        .btn{
+            border:2px solid $main_color;
+            color:$main_color;
+            text-decoration:none;
+            font-weight:bold;
+            @include transition(all .2s);
+            &:hover{
+                background:$main_color;
+                color:#FFF;
+            }
+        }
+    }
+}

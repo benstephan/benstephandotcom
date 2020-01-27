@@ -1,0 +1,46 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "grid";
+@import "fontawesome";
+
+/* Components */
+@import "components/navigation";
+@import "components/hero";
+@import "components/featured-work";
+@import "components/services";
+@import "components/contact-block";
+@import "components/footer";
+@import "components/about-intro";
+@import "components/slider";
+@import "components/post";
+@import "components/contact-form";
+body{
+	background:#FFF;
+	visibility:hidden;
+	top:10px;
+	@include transition(all .3s);
+	opacity:0;
+
+	&.loaded{
+		top:0;
+		visibility: visible;
+		opacity:1;
+	}
+}
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+.bordered{
+	width:60px;
+	height:5px;
+	background:$main_color;
+}
+
+.btn{
+	border:1px solid #FFF;
+	padding:10px 15px;
+	background:none;
+}
