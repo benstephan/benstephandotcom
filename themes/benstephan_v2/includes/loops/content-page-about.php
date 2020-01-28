@@ -2,7 +2,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-5">
-<img src="<?php bloginfo('template_directory'); ?>/assets/img/ben-stephan.png" alt="Ben Stephan Design" class="img-responsive" />
+<img src="<?php bloginfo('template_directory'); ?>/assets/img/ben-stephan.png" alt="Ben Stephan Design" class="lazy img-responsive" data-src="<?php bloginfo('template_directory'); ?>/assets/img/ben-stephan.png" />
 </div>
 <div class="col-md-5 col-md-offset-2">
 <div class="about-intro__content">
@@ -26,7 +26,7 @@
 <a class="btn" href="https://bemarketing.com/" target="_blank">Visit Site <i class="fa fa-sign-out"></i></a>
 </div>
 <div class="col-md">
-<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-bemarketing.png" alt="beMarketing" class="img-responsive" />
+<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-bemarketing.png" alt="beMarketing" class="lazy img-responsive" data-src="<?php bloginfo('template_directory'); ?>/assets/img/logo-bemarketing.png" />
 </div>
 </div>
 </div>
@@ -42,7 +42,7 @@
 <a class="btn" href="https://iqnection.com/" target="_blank">Visit Site <i class="fa fa-sign-out"></i></a>
 </div>
 <div class="col-md">
-<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-iqnection.png" alt="IQnection" class="img-responsive" />
+<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-iqnection.png" alt="IQnection" class="lazy img-responsive" data-src="<?php bloginfo('template_directory'); ?>/assets/img/logo-iqnection.png" />
 </div>
 
 </div>
@@ -59,7 +59,7 @@
 <a class="btn" href="http://davincigraphicsinc.com/" target="_blank">Visit Site <i class="fa fa-sign-out"></i></a>
 </div>
 <div class="col-md">
-<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-davinci.png" alt="Da Vinci Graphics" class="img-responsive" />
+<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-davinci.png" alt="Da Vinci Graphics" class="lazy img-responsive" data-src="<?php bloginfo('template_directory'); ?>/assets/img/logo-davinci.png" />
 </div>
 </div>
 </div>

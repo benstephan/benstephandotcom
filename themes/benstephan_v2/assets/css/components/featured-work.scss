@@ -78,7 +78,7 @@
                 color:#FFF;
                 border:2px solid $main_color;
                 text-decoration:none;
-                font-weight:bold;
+                font-family:$main_font_bold;
                 @media(min-width:$screen-md){
                     opacity:0;
                 }

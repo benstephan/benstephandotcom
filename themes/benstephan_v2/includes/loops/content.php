@@ -7,7 +7,7 @@ $thumb_url = $thumb_url_array[0];
 <div class="work-posts__post">
 <div class="work-posts__image">
 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-<img src="<?php echo $thumb_url; ?>" class="img-responsive" alt="<?php the_title(); ?>" />
+<img src="<?php echo $thumb_url; ?>" class="lazy img-responsive" alt="<?php the_title(); ?>" data-src="<?php echo $thumb_url; ?>" />
 </a>
 </div>
 <div class="work-posts__content col-md-10 col-md-offset-1">

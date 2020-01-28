@@ -20,13 +20,13 @@ if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
         $query->the_post();
 $thumb_id = get_post_thumbnail_id();
-$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'medium-size', true);
 $thumb_url = $thumb_url_array[0];
 ?>
 <div class="col-md">
 <div class="featured-work__wrap">
 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-<img src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>" class="img-responsive" />
+<img src="<?php echo get_relative_thumb( 'large' ); ?>" alt="<?php the_title(); ?>" class="img-responsive lazy" data-src="<?php echo get_relative_thumb( 'large' ); ?>" />
 <div class="featured-work__description">
 <h4><?php the_title(); ?></h4>
 <button class="btn">Read More</button>

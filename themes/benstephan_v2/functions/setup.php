@@ -96,9 +96,8 @@ function twentyten_remove_recent_comments_style() {
     }  
 add_action( 'widgets_init', 'twentyten_remove_recent_comments_style' );
 remove_action('wp_footer', 'wp-fastest-cache');
-
-
 add_action( 'wp_print_styles', 'wps_deregister_styles', 100 ); function wps_deregister_styles() { wp_deregister_style( 'contact-form-7' ); } 
+
 // Register Custom Post Type
 function service_areas() {
 
@@ -158,3 +157,24 @@ add_action( 'init', 'service_areas', 0 );
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
+// Image Size URL
+
+function get_relative_thumb( $size ) {
+	global $post;
+	if ( has_post_thumbnail()) {
+	  $absolute_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), $size);
+	 $domain = get_site_url(); // returns something like http://domain.com
+	 $relative_url = str_replace( $domain, '', $absolute_url[0] );
+	 return $relative_url;
+	}
+ }
+
+ add_filter( 'clean_url', function( $url )
+{
+    if ( FALSE === strpos( $url, '.js' ) )
+    { // not our file
+        return $url;
+    }
+    // Must be a ', not "!
+    return "$url' defer='defer";
+}, 11, 1 );

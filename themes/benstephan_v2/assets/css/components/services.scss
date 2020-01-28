@@ -23,8 +23,7 @@
         text-align:center;
     }
     h5{
-        font-family:$secondary_font;
-        font-weight:bold;
+        font-family:$secondary_font_bold;
         text-transform:uppercase;
         letter-spacing:8px;
         font-size:32px;
@@ -63,7 +62,7 @@
         h6{
             margin:20px 0;
             color:rgba(0,0,0,0.4);
-            font-weight:bold;
+            font-family:$secondary_font_bold;
             @include transition(all .2s);
         }
     }

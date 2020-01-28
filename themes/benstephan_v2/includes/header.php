@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-<script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-PRWDT5L",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");</script>
+<script async>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-PRWDT5L",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");</script>
 
 <title><?php wp_title(''); ?></title>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/img/favicon.ico" type="image/x-icon">

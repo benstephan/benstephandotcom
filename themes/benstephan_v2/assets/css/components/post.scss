@@ -23,7 +23,7 @@
             border:2px solid $main_color;
             color:$main_color;
             text-decoration:none;
-            font-weight:bold;
+            font-family:$main_font_bold;
             @include transition(all .2s);
             &:hover{
                 background:$main_color;
