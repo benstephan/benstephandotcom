@@ -39,7 +39,7 @@
 <li<?php if(is_home() || is_archive() || is_category() || is_single()){ echo ' class="active"'; } ?>><a href="<?php bloginfo('url'); ?>/work/" title="<?php bloginfo('url'); ?>" title="<?php bloginfo('title'); ?> - Work">Work</a></li>
 <li><a href="#" class="contact-form" title="<?php bloginfo('url'); ?>" title="<?php bloginfo('title'); ?> - Contact">Contact</a></li>
 </ul>
-<button class="main-header__nav-toggle"><i class="fa fa-bars"></i></button>
+<div class="main-header__nav-toggle"><i class="fa fa-bars"></i></div>
 <ul class="main-header__nav-hidden"></ul>
 </nav>
 </div>

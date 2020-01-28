@@ -16,6 +16,10 @@
             padding-top:120px;
             padding-bottom:120px;
         }
+        @media(max-width:$screen-md){
+            padding-left:0;
+            padding-right:0;
+        }
     }
     .col-md{
         @media(min-width:$screen-md){
@@ -47,7 +51,7 @@
             height:284px;
         }
         @media(max-width:$screen-md){
-            height:188px;
+            height:auto;
         }
         
         align-items: center;
@@ -64,7 +68,9 @@
 
             h4{
                 color:#FFF;
-                opacity:0;
+                @media(min-width:$screen-md){
+                    opacity:0;
+                }
                 @include transition(all .2s);
             }
 
@@ -73,7 +79,9 @@
                 border:2px solid $main_color;
                 text-decoration:none;
                 font-weight:bold;
-                opacity:0;
+                @media(min-width:$screen-md){
+                    opacity:0;
+                }
                 @include transition(all .2s);
                 &:hover{
                     background:$main_color;
@@ -94,17 +102,24 @@
             }
         }
         img{
-            position:absolute;
-            top:0;
-            left:0;
+            @media(min-width:$screen-md){
+                position:absolute;
+                top:0;
+                left:0;
+            }
             @include transition(all .2s);
         }
         .featured-work__description{
             position:relative;
             margin:0 auto;
-            opacity:0;
-            transform:translateY(110%);
-            display:none;
+            @media(min-width:$screen-md){
+                opacity:0;
+                transform:translateY(110%);
+                display:none;
+            }
+            @media(max-width:$screen-md){
+                padding:15px;
+            }
             z-index:99;
             width:100%;
             text-align:center;
@@ -114,7 +129,10 @@
             .featured-work__description{
                 display:inline-table;
                 opacity:1;
-                transform:translateY(95%);
+                @media(min-width:$screen-md){
+                    transform:translateY(95%);
+                }
+                
             }
         }
     }
