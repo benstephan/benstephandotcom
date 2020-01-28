@@ -69,8 +69,13 @@
         p{
             text-align:center;
             color:#FFF;
-            font-size:24px;
-
+            
+            @media(max-width:$screen-md){
+                font-size:24px;
+            }
+            @media(min-width:$screen-md){
+                font-size:14px;
+            }
             &:nth-child(2){
                 margin-bottom:35px;
             }
@@ -83,6 +88,9 @@
             @media(min-width:$screen-md){
                 font-size:24px;
                 margin:10px;
+            }
+            @media(max-width:$screen-md){
+                font-size:14px;
             }
             border:2px solid #FFF;
             @include border-radius(30px);
