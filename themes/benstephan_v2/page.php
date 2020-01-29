@@ -4,6 +4,8 @@
 get_template_part('includes/loops/content', 'page-home');
 }elseif(is_page('about')){
 get_template_part('includes/loops/content', 'page-about');
+}elseif(is_page('portfolio')){
+get_template_part('includes/loops/content', 'page-portfolio');
 }else{ ?>
 <div id="work-posts">
 <div class="container">
