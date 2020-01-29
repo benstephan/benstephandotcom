@@ -14,7 +14,7 @@
 <input type="text" name="email" id="contact-block__email" placeholder="email@website.com" />
 </fieldset>
 <fieldset class="col">
-<button id="open-contact" class="btn btn--primary">Continue <i class="fa fa-arrow-right"></i></button>
+<div id="open-contact" class="btn btn--primary">Continue <i class="fa fa-arrow-right"></i></div>
 </fieldset>
 </form>
 </div>

@@ -168,13 +168,3 @@ function get_relative_thumb( $size ) {
 	 return $relative_url;
 	}
  }
-
- add_filter( 'clean_url', function( $url )
-{
-    if ( FALSE === strpos( $url, '.js' ) )
-    { // not our file
-        return $url;
-    }
-    // Must be a ', not "!
-    return "$url' defer='defer";
-}, 11, 1 );

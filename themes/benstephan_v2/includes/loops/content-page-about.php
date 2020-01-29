@@ -2,7 +2,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-5">
-<img src="<?php bloginfo('template_directory'); ?>/assets/img/ben-stephan.png" alt="Ben Stephan Design" class="lazy img-responsive" data-src="<?php bloginfo('template_directory'); ?>/assets/img/ben-stephan.png" />
+<img src="<?php bloginfo('template_directory'); ?>/assets/img/ben-stephan.png" alt="Ben Stephan Design" class="lazy" data-src="<?php bloginfo('template_directory'); ?>/assets/img/ben-stephan.png" />
 </div>
 <div class="col-md-5 col-md-offset-2">
 <div class="about-intro__content">

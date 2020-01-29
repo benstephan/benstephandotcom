@@ -16,6 +16,7 @@
 @import "components/slider";
 @import "components/post";
 @import "components/contact-form";
+@import "components/404";
 body{
 	background:#FFF;
 	visibility:hidden;
@@ -43,4 +44,18 @@ body{
 	border:1px solid #FFF;
 	padding:10px 15px;
 	background:none;
+}
+.no-js img.lazyload { 
+	display: none; 
+}
+figure.wp-block-image img.lazyloading { 
+	min-width: 150px; 
+}
+.lazyload, .lazyloading { 
+	opacity: 0; 
+}
+.lazyloaded {
+	opacity: 1;
+	transition: opacity 400ms;
+	transition-delay: 0ms;
 }

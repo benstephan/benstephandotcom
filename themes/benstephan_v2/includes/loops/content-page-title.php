@@ -3,6 +3,8 @@
 The Page Title
 =============
 */
+
+$pageIntro = get_field('page_intro');
 ?>
 <div id="hero">
 <div class="container">
@@ -18,7 +20,7 @@ The Page Title
 }else{
     the_title(); 
 } ?></h2>
-<p><strong>Hi, </strong>I am Ben Stephan. A fully rounded creative professional from the always sunny Philadelphia. I specialze in front-end web development but my skills include everything from graphic design to full-stack LAMP and MERN development.</p>
+<p><?php if($pageIntro != ''){echo $pageIntro;}elseif(is_home()){echo 'My work page is my laboratory for my creative projects. No client work is presented here, because I am employed full-time at <a href="https://bemarketing.com/" target="_blank">beMarketing Solutions</a>, as a senior web developer. This is more for fun.';}else{} ?></p>
 </div>
 </div>
 </div>

@@ -1,0 +1,12 @@
+#four-zero-four{
+    display:flex;
+    height:100vh;
+    width:100%;
+    align-items: center;
+    align-content: center;
+    text-align:center;
+    background:$main_color;
+    *{
+        color:#FFF;
+    }
+}
