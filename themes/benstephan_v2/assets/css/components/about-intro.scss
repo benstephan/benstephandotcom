@@ -1,5 +1,10 @@
 #about-intro{
     padding:0 0 100px 0;
+    img{
+        @media(min-width:$screen-md){
+            margin-left:-100px;
+        }
+    }
     .container{
         @media(min-width:$screen-md){
             padding:0 150px;
